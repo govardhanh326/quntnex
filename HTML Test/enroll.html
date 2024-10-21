@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            text-align: left;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        label {
+            display: inline-block;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registration for Course</h1>
+    <form action="">
+        <div class="form-group">
+            <label for="name">Enter your name</label>
+            <input type="text" id="name" name="name">
+        </div>
+
+        <div class="form-group">
+            <label for="college">Enter your college name</label>
+            <input type="text" id="college" name="college_name">
+        </div>
+
+        <div class="form-group">
+            <label>Enter your gender</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="transgender" name="gender" value="transgender">
+            <label for="transgender">Transgender</label>
+        </div>
+
+        <div class="form-group">
+            <label for="qualification">Enter your qualification</label>
+            <select id="qualification" name="qualification">
+                <option value="be">BE</option>
+                <option value="btech">BTECH</option>
+                <option value="bsc">BSC</option>
+                <option value="mca">MCA</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="course">Select your interested course</label>
+            <select id="course" name="course">
+                <option value="java_fullstack">Java Fullstack</option>
+                <option value="python_fullstack">Python Fullstack</option>
+                <option value="software_testing">Software Testing and Automation</option>
+                <option value="mca">MCA</option>
+            </select>
+        </div>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
